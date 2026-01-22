@@ -1,0 +1,70 @@
+#doctors .filters {
+	border: solid 1px #eee;
+    padding: 10px;
+	width: 100%;
+}
+
+#doctors form {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+}
+
+#doctors .filters div {
+	margin-right: 20px;
+}
+
+#doctors .filters div:last-child {
+	margin-right: 0;
+}
+
+#doctors .filters select {
+	padding: 10px;
+}
+
+.doctor-card {
+    align-items: flex-start;
+	border: solid 1px #999;
+	display: flex;
+    gap: 20px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.doctor-thumbnail {
+	background: #eee;
+	line-height: 0;
+	min-height: 150px;
+	min-width: 150px;
+}
+
+.doctor-card .doctor-info,
+.single-doctor .doctor-info {
+    flex: 1;
+}
+
+.doctor-card .doctor-name {
+	font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+	width: 100%;	
+}
+
+.single-doctor {
+	align-items: flex-start;
+	display: flex;
+    gap: 20px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.single-doctor h2 {
+	margin: 0;
+}
+
+.single-doctor ul {
+	margin-left: 0;
+}

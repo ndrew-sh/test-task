@@ -1,0 +1,20 @@
+#doctor-data td {
+    padding-bottom: 10px;
+}
+
+#doctor-data, #doctor-data td input[type="number"] {
+	width: 100%;
+}
+
+#doctor-data td label {
+    margin-right: 20px;
+}
+
+.column-cpt_dctrs_rating {
+	text-align: center !important;
+	width: 100px;
+}
+
+.column-wclc_user_id {
+    width: 200px;
+}

@@ -1,0 +1,31 @@
+<table id="doctor-data">
+	<tr>
+		<td>
+			<?php _e( 'Опыт (лет)', 'cpt-doctors' ); ?>
+		</td>
+		<td>
+            <input type="number" id="<?php echo $prefix; ?>experience" name="<?php echo $prefix; ?>experience" value="<?php echo esc_attr( $experience ); ?>" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<?php _e( 'Цена от', 'cpt-doctors' ); ?>
+		</td>
+		<td>
+			<input type="number" id="<?php echo $prefix; ?>price" name="<?php echo $prefix; ?>price" value="<?php echo esc_attr( $price ); ?>" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<?php _e( 'Рейтинг', 'cpt-doctors' ); ?>
+		</td>
+		<td>
+			<?php for ( $i = 0; $i<6; $i++ ): ?>
+			<label for="<?php echo $prefix; ?>rating-<?php echo $i; ?>">
+				<input type="radio" name="<?php echo $prefix; ?>rating" id="<?php echo $prefix; ?>rating-<?php echo $i; ?>" value="<?php echo absint( $i ); ?>" <?php checked( $i, $rating ); ?> />
+				<?php echo $i; ?>
+			</label>
+			<?php endfor; ?>
+		</td>
+	</tr>
+</table>
