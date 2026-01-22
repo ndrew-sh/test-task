@@ -61,6 +61,13 @@
 	padding: 10px;
 }
 
+.single-doctor .doctor-photo {
+	background: #eee;
+	line-height: 0;
+	min-height: 450px;
+	min-width: 450px;
+}
+
 .single-doctor h2 {
 	margin: 0;
 }
